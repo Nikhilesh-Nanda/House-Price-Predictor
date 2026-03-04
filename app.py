@@ -15,11 +15,6 @@ st.sidebar.markdown(
     """
 )
 st.sidebar.markdown("---")
-st.sidebar.header("Model Details")
-st.sidebar.info("Model: Decision Tree Regressor (trained with One-Hot Encoding)")
-st.sidebar.info("Input features: 14")
-st.sidebar.info("Target: House Price (scaled by 1000)")
-
 # --- Main App ---
 st.title("🏡 House Price Predictor")
 st.write("Enter the details of the house to get an estimated price.")
@@ -131,3 +126,4 @@ with st.form("house_features_form"):
 
         except Exception as e:
             st.error(f"An error occurred during prediction: {e}")
+
